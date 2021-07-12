@@ -1,14 +1,25 @@
-import { useState } from 'react'
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from 'reactstrap'
+// import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import Menu from '../Menu'
 import { Link } from 'react-router-dom'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
 
 const styles = {
   links: {
@@ -17,41 +28,25 @@ const styles = {
   }
 }
 
-const Appbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => setIsOpen(!isOpen)
+const TopBar = () => {
+  const classes = useStyles();
 
   return (
-    <div>
-      <Navbar color='light' light expand='md'>
-        <NavbarBrand>
-          <Link to='/' style={styles.links}>
-            Jacob Zavita - Full Stack Web Development
-          </Link>
-        </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className='mr-auto' navbar>
-            <NavItem>
-              <NavLink>
-                <Link to='/portfolio' style={styles.links}>
-                  Portfolio
-                </Link>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>
-                <Link to='/contact' style={styles.links}>
-                  Contact
-                </Link>
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <Menu />
+          </IconButton>
+          <Typography variant="h6" className={classes.title}>
+            <Link to='/' style={styles.links}>
+              Jacob Zavita - Full Stack Developer
+            </Link>
+          </Typography>
+        </Toolbar>
+      </AppBar>
     </div>
-  )
+  );
 }
 
-export default Appbar
+export default TopBar

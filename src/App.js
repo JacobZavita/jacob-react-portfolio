@@ -7,6 +7,7 @@ import {
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
+import Resume from './pages/Resume'
 
 import Appbar from './components/Appbar'
 
@@ -26,6 +27,9 @@ const App = () => {
           </Route>
           <Route path='/contact'>
             <Contact />
+          </Route>
+          <Route path='/resume'>
+            <Resume />
           </Route>
         </Switch>
       </div>
