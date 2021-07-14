@@ -6,6 +6,7 @@ import ListItem from '@material-ui/core/ListItem';
 import DevIcon from 'devicon-react-svg'
 import { Grid } from '@material-ui/core'
 import Button from '@material-ui/core/Button';
+// import pdf from '../../assets'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,6 +36,9 @@ const useStyles1 = makeStyles({
 const Resume = () => {
   const classes= useStyles()
   const classes1 = useStyles1()
+  const downloadFile = () => {
+    window.location.href = "https://drive.google.com/file/d/1iCotgGpkpAR7SXlyBM-vBEzUi2sIfXgl/view"
+  }
 
   return (
     <>
@@ -115,7 +119,7 @@ const Resume = () => {
           </Paper>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
-          <Button className={classes1.root}>Download Resume</Button>
+          <Button className={classes1.root} onClick={downloadFile}>Download Resume</Button>
         </div>
     </>
   )
