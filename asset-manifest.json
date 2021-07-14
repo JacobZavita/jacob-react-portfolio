@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/alwayssmellitfirst/jacob-react-portfolio/static/css/main.a617e044.chunk.css",
+    "main.js": "/alwayssmellitfirst/jacob-react-portfolio/static/js/main.d3933134.chunk.js",
+    "main.js.map": "/alwayssmellitfirst/jacob-react-portfolio/static/js/main.d3933134.chunk.js.map",
+    "runtime-main.js": "/alwayssmellitfirst/jacob-react-portfolio/static/js/runtime-main.91e19002.js",
+    "runtime-main.js.map": "/alwayssmellitfirst/jacob-react-portfolio/static/js/runtime-main.91e19002.js.map",
+    "static/css/2.e20148bd.chunk.css": "/alwayssmellitfirst/jacob-react-portfolio/static/css/2.e20148bd.chunk.css",
+    "static/js/2.ac11e182.chunk.js": "/alwayssmellitfirst/jacob-react-portfolio/static/js/2.ac11e182.chunk.js",
+    "static/js/2.ac11e182.chunk.js.map": "/alwayssmellitfirst/jacob-react-portfolio/static/js/2.ac11e182.chunk.js.map",
+    "static/js/3.75f2f6a8.chunk.js": "/alwayssmellitfirst/jacob-react-portfolio/static/js/3.75f2f6a8.chunk.js",
+    "static/js/3.75f2f6a8.chunk.js.map": "/alwayssmellitfirst/jacob-react-portfolio/static/js/3.75f2f6a8.chunk.js.map",
+    "index.html": "/alwayssmellitfirst/jacob-react-portfolio/index.html",
+    "static/css/2.e20148bd.chunk.css.map": "/alwayssmellitfirst/jacob-react-portfolio/static/css/2.e20148bd.chunk.css.map",
+    "static/css/main.a617e044.chunk.css.map": "/alwayssmellitfirst/jacob-react-portfolio/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.ac11e182.chunk.js.LICENSE.txt": "/alwayssmellitfirst/jacob-react-portfolio/static/js/2.ac11e182.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/alwayssmellitfirst/jacob-react-portfolio/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91e19002.js",
+    "static/css/2.e20148bd.chunk.css",
+    "static/js/2.ac11e182.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.d3933134.chunk.js"
+  ]
+}
