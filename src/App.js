@@ -1,5 +1,6 @@
 import {
-  BrowserRouter as Router,
+  HashRouter,
+  // BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom'
@@ -16,7 +17,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <div>
         <Appbar />
         <Switch>
@@ -35,7 +36,7 @@ const App = () => {
         </Switch>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   )
 }
 
