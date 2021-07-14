@@ -21,7 +21,7 @@ const App = () => {
       <div>
         <Appbar />
         <Switch>
-          <Route path='/jacob-react-portfolio/'>
+          <Route path={process.env.PUBLIC_URL + '/'}>
             <About />
           </Route>
           <Route path='/jacob-react-portfolio/portfolio'>
