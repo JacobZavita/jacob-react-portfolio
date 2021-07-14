@@ -20,16 +20,16 @@ const App = () => {
       <div>
         <Appbar />
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/jacob-react-portfolio/'>
             <About />
           </Route>
-          <Route path='/portfolio'>
+          <Route path='/jacob-react-portfolio/portfolio'>
             <Portfolio />
           </Route>
-          <Route path='/contact'>
+          <Route path='/jacob-react-portfolio/contact'>
             <Contact />
           </Route>
-          <Route path='/resume'>
+          <Route path='/jacob-react-portfolio/resume'>
             <Resume />
           </Route>
         </Switch>
