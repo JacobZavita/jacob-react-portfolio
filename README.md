@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Jacob Zavita Portfolio built with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with [Create React App](https://github.com/facebook/create-react-app). It used Material-UI as the styling library. It is a portfolio for Jacob Zavita's development work.
+
+## Pages
+
+This site has an About Me section including a bio and photo of Jacob, a Portfolio page with some of his recent work, a Resume page listing skills and a link to download a resume, and a Contact page.
 
 ## Available Scripts
 
