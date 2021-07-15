@@ -19,7 +19,11 @@ const App = () => {
     <Router>
       <div>
         <Appbar />
-        <Switch>
+          <About />
+          <Resume />
+          <Portfolio />
+          <Contact />
+        {/* <Switch>
           <Route exact path='/jacob-react-portfolio/'>
             <About />
           </Route>
@@ -32,7 +36,7 @@ const App = () => {
           <Route exact path='/jacob-react-portfolio/resume'>
             <Resume />
           </Route>
-        </Switch>
+        </Switch> */}
         <Footer />
       </div>
     </Router>
