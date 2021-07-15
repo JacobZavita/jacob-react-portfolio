@@ -20,7 +20,7 @@ const App = () => {
       <div>
         <Appbar />
         <Switch>
-          <Route exact path=''>
+          <Route exact path='/jacob-react-portfolio/'>
             <About />
           </Route>
           <Route exact path='/jacob-react-portfolio/portfolio'>
