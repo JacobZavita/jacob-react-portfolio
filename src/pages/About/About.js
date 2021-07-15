@@ -10,8 +10,6 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     '& > *': {
       margin: theme.spacing(1),
-      // width: theme.spacing(80),
-      // height: theme.spacing(50),
     },
   },
 }));
@@ -45,7 +43,6 @@ const About = () => {
           </Typography>
           <img src='https://i.postimg.cc/Njfzsfyv/00100lr-PORTRAIT-00100-BURST20200828161547179-COVER.jpg' alt='Jacob Zavita' />
         </Paper>
-
       </Container>
     </>
   )

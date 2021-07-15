@@ -12,7 +12,7 @@ import Resume from './pages/Resume'
 import Appbar from './components/Appbar'
 import Footer from './components/Footer'
 
-import './App.css';
+import './App.css'
 
 const App = () => {
   return (
