@@ -23,7 +23,7 @@ const App = () => {
           <Resume />
           <Portfolio />
           <Contact />
-        {/* <Switch>
+        <Switch>
           <Route exact path='/jacob-react-portfolio/'>
             <About />
           </Route>
@@ -36,7 +36,7 @@ const App = () => {
           <Route exact path='/jacob-react-portfolio/resume'>
             <Resume />
           </Route>
-        </Switch> */}
+        </Switch>
         <Footer />
       </div>
     </Router>
