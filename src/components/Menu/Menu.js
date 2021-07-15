@@ -34,7 +34,7 @@ export default function SimpleMenu() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>
-          <Link to='' style={styles.links}>
+          <Link to='/jacob-react-portfolio/' style={styles.links}>
             About Me
           </Link>
         </MenuItem>
