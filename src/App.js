@@ -19,10 +19,6 @@ const App = () => {
     <Router>
       <div>
         <Appbar />
-          <About />
-          <Resume />
-          <Portfolio />
-          <Contact />
         <Switch>
           <Route exact path='/jacob-react-portfolio/'>
             <About />
