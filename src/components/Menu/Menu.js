@@ -34,7 +34,7 @@ export default function SimpleMenu() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>
-          <Link to={process.env.PUBLIC_URL + '/'} style={styles.links}>
+          <Link to='' style={styles.links}>
             About Me
           </Link>
         </MenuItem>

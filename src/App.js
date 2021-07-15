@@ -1,6 +1,5 @@
 import {
-  HashRouter,
-  // BrowserRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom'
@@ -17,26 +16,26 @@ import './App.css';
 
 const App = () => {
   return (
-    <HashRouter>
+    <Router>
       <div>
         <Appbar />
         <Switch>
-          <Route path={process.env.PUBLIC_URL + '/'}>
+          <Route exact path=''>
             <About />
           </Route>
-          <Route path='/jacob-react-portfolio/portfolio'>
+          <Route exact path='/jacob-react-portfolio/portfolio'>
             <Portfolio />
           </Route>
-          <Route path='/jacob-react-portfolio/contact'>
+          <Route exact path='/jacob-react-portfolio/contact'>
             <Contact />
           </Route>
-          <Route path='/jacob-react-portfolio/resume'>
+          <Route exact path='/jacob-react-portfolio/resume'>
             <Resume />
           </Route>
         </Switch>
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
   )
 }
 
