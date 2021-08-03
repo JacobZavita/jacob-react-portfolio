@@ -12,6 +12,8 @@ import { Link } from 'react-router-dom'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    backgroundColor: '#2176AE',
+    color: '#FCF7F8'
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -32,8 +34,8 @@ const TopBar = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
+    <div>
+      <AppBar position="static" className={classes.root}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <Menu />
