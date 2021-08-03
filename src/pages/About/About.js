@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '10px',
     position: 'absolute',
     top: '20%',
-    left: '60%'
+    left: '57%'
   }
 }));
 
@@ -61,7 +61,7 @@ const About = () => {
               Hi, I'm Jacob. I'm a...
             </Typography>
             <Typography variant='h4' className={classes.text}>
-              Fullstack developer in training with a background in SaaS sales. I'm building out my portfolio as I finish up UCI's coding bootcamp so hang tight for more updates.            
+              Frontend developer with a background in B2B SaaS sales. I'm certified in Full Stack Web Development by UC Irvine. Check out my work.
             </Typography>
             <Button className={classes.button}>
               Check out my projects
@@ -73,9 +73,6 @@ const About = () => {
           <Grid item xs={12} md={6}>
             <img src='https://i.postimg.cc/Njfzsfyv/00100lr-PORTRAIT-00100-BURST20200828161547179-COVER.jpg' alt='Jacob Zavita' className={classes.mainImage} />
           </Grid>
-          
-          {/* <Paper elevation={3} style={{ padding: '15px', display: 'flex' }}> */}
-          {/* </Paper> */}
         </Grid>
       </div>
     </>

@@ -1,3 +1,4 @@
+import{ makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
@@ -5,42 +6,59 @@ import Link from '@material-ui/core/Link'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub'
+import { Typography } from '@material-ui/core'
 
+const useStyles = makeStyles((theme) => ({
+  box: {
+    backgroundColor: '#2176AE',
+    color: '#FCF7F8',
+    minHeight: '5vh',
+  },
+  row: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    display: 'flex'
+  },
+  link: {
+    color: '#FCF7F8',
+    margin: '10px 10px 7px'
+  },
+  copyright: {
+    marginBottom: '10px'
+  }
+}))
 
 const Footer = () => {
+  const classes = useStyles()
 
   return (
     <footer>
-      <Box
-        px={{ xs: 2, sm: 5}}
-        py={{ xs: 4, sm: 5 }}
-        bgcolor="#66b3ff"
-        color="white"
-        position='sticky'
-      >
-        <Container maxWidth="lg">
-          <Grid container spacing={5}>
-            <Grid item xs={12} sm={4}>
-              <Box marginBottom='10px'>Check out my work</Box>
-                <Link href='https://github.com/alwayssmellitfirst' color='#ffffff'>
-                  <GitHubIcon></GitHubIcon>
-                </Link>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <Box>Take a look at my work history</Box>
-              <Link href='https://www.linkedin.com/in/jacob-zavita-34518b13/' color='#ffffff'>
+      <Grid container className={classes.box}>
+        <Grid
+          item
+          xs={12}
+          className={classes.row}
+        >
+              <Link href='https://github.com/JacobZavita' className={classes.link}>
+                <GitHubIcon></GitHubIcon>
+              </Link>
+              <Link href='https://www.linkedin.com/in/jacob-zavita/' className={classes.link}>
                 <LinkedInIcon></LinkedInIcon>
               </Link>
+              <Link href='https://twitter.com/JacobZavita' className={classes.link}>
+                <TwitterIcon></TwitterIcon>
+              </Link>
             </Grid>
-            <Grid item xs={12} sm={4}>
-              <Box>Follow me as I learn @NewDevJourney</Box>
-                <Link href='https://twitter.com/NewDevJourney' color='#ffffff'>
-                  <TwitterIcon></TwitterIcon>
-                </Link>
+            <Grid
+              item
+              xs={12}
+              className={classes.row}
+            >
+              <Typography className={classes.copyright}>
+            Jacob Zavita <span style={{ color: '#F5F0F6' }}>©2021</span>
+              </Typography>
             </Grid>
           </Grid>
-        </Container>
-      </Box>
     </footer>
   )
 }
