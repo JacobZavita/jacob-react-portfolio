@@ -10,18 +10,20 @@ import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: '89vh',
+    backgroundColor: '#042A2B',
+  },
+  list: {
     display: 'flex',
-    flexWrap: 'wrap',
     '& > *': {
       margin: theme.spacing(1),
       width: theme.spacing(100),
       height: theme.spacing(60),
     },
   },
-}));
-
-const useStyles1 = makeStyles({
-  root: {
+  button: {
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
     border: 0,
     borderRadius: 3,
@@ -29,26 +31,24 @@ const useStyles1 = makeStyles({
     color: 'white',
     height: 48,
     padding: '0 30px',
-  },
-});
-
+  }
+}));
 
 const Resume = () => {
   const classes= useStyles()
-  const classes1 = useStyles1()
+
   const downloadFile = () => {
     window.location.href = "https://drive.google.com/file/d/1iCotgGpkpAR7SXlyBM-vBEzUi2sIfXgl/view"
   }
 
   return (
-    <>
-        <div className={classes.root} align='center' >
+    <div className={classes.root}>
+        <div className={classes.list} align='center' >
           <Paper elevation={3} style={{ margin:'15px auto', padding:'20px 5px' }}>
             <Typography variant='h4'>
               Skills
             </Typography>
             <hr></hr>
-          <div className={classes.root}>
             <Grid container spacing={2}>
               <Grid item xs={6}>
                 <List component="nav" >
@@ -115,13 +115,12 @@ const Resume = () => {
                 </List>
               </Grid>
             </Grid>
-          </div>
           </Paper>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
-          <Button className={classes1.root} onClick={downloadFile}>Download Resume</Button>
+          <Button className={classes.button} onClick={downloadFile}>Download Resume</Button>
         </div>
-    </>
+    </div>
   )
 }
 

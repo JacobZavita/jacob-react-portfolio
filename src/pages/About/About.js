@@ -9,13 +9,13 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
+    minHeight: '100vh',
+    alignItems: 'center',
+    justifyContent: 'center',
     '& > *': {
       margin: theme.spacing(1),
     },
-    justifyContent: 'center',
-    minHeight: '100vh',
     backgroundColor: '#042A2B',
-    alignItems: 'center'
   },
   grid: {
     display: 'flex',
