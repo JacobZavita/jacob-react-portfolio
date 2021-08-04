@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Card, CardContent, Grid, TextField, Button } from '@material-ui/core'
+import emailjs from 'emailjs-com'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,6 +19,19 @@ const useStyles = makeStyles((theme) => ({
 
 const Contact = () => {
   const classes = useStyles()
+
+  const sendEmail = event => {
+    event.preventDefault()
+
+    emailjs.sendForm(
+      'service_wn90ahh',
+      'template_zsr7mgn',
+      event.target,
+      'user_Yg7N7VfLmVBhFJ4yOHF0s'
+    ).then(res => {
+      console.log(res)
+    }).catch(err => console.log(err))
+  }
 
   return (
     <div className={classes.root}>
@@ -39,7 +53,7 @@ const Contact = () => {
                 >
                   Send me an email and we'll go from there
                 </Typography>
-                  <form>
+                  <form onSubmit={sendEmail}>
                     <Grid container spacing={1}>
                       <Grid
                         xs={12}
@@ -48,6 +62,7 @@ const Contact = () => {
                       >
                         <TextField
                           label='First Name'
+                          name='firstName'
                           placeholder='Enter first name'
                           variant='outlined'
                           fullWidth
@@ -61,6 +76,7 @@ const Contact = () => {
                       >
                         <TextField
                           label='Last Name'
+                          name='lastName'
                           placeholder='Enter last name'
                           variant='outlined'
                           fullWidth
@@ -71,6 +87,7 @@ const Contact = () => {
                         <TextField
                           type='email'
                           label='Email'
+                          name='userEmail'
                           placeholder='Enter email address'
                           variant='outlined'
                           fullWidth
@@ -79,8 +96,8 @@ const Contact = () => {
                       </Grid>
                       <Grid xs={12} item>
                         <TextField
-                          type='number'
                           label='Phone Number'
+                          name='phoneNumber'
                           placeholder='Enter phone number'
                           variant='outlined'
                           fullWidth
@@ -90,6 +107,7 @@ const Contact = () => {
                       <Grid xs={12} item>
                         <TextField
                           label='Message'
+                          name='message'
                           multiline
                           rows={4}
                           placeholder='Type your message here'
